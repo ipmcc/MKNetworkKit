@@ -22,8 +22,8 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
+#if TARGET_OS_IPHONE
 
-#import <UIKit/UIKit.h>
 
 extern const float kFromCacheAnimationDuration;
 extern const float kFreshLoadAnimationDuration;
@@ -38,3 +38,4 @@ extern const float kFreshLoadAnimationDuration;
 -(MKNetworkOperation*) setImageFromURL:(NSURL*) url placeHolderImage:(UIImage*) image animation:(BOOL) yesOrNo;
 -(MKNetworkOperation*) setImageFromURL:(NSURL*) url placeHolderImage:(UIImage*) image usingEngine:(MKNetworkEngine*) imageCacheEngine animation:(BOOL) yesOrNo;
 @end
+#endif
